@@ -1,0 +1,25 @@
+# =============================================================================
+# config/parameters.yaml
+# -----------------------------------------------------------------------------
+
+effective_recharge:
+  # Land-cover coefficient Kc in AET(t) = Kc * PET(t)  (Eq. 1)
+  # "A uniform value of Kc = 0.5 was adopted across all sites".
+  kc: 0.5
+  min_valid_fraction: 1.0
+
+hydrological_memory:
+  # Candidate hydrological-memory windows N, in months.
+  windows_months: [3, 6, 12]
+  # Number of days used to approximate one month in the N x 30-day rolling
+  # window (Eq. 3: "N x 30 approximates the number of days contained in
+  # N months").
+  days_per_month: 30
+
+geological_lag:
+  # Candidate geological lags L, in months.
+  months: [0, 1, 2, 3, 4, 5]
+  # Alignment convention implemented by src.gpi.align_gpi_and_groundwater
+  # (Eq. 5): the groundwater level used to evaluate the GPI at date t is
+  # GW(t + L). 
+  convention: "gw_shifted_forward"

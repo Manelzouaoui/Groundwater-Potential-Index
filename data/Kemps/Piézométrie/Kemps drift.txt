@@ -1,0 +1,98 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:rt="http://environment.data.gov.uk/flood-monitoring/def/core/"
+    xmlns:core="http://environment.data.gov.uk/reference/def/core/"
+    xmlns:wfd="http://environment.data.gov.uk/catchment-planning/def/water-framework-directive/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:op="http://environment.data.gov.uk/reference/def/op/"
+    xmlns:local="http://localhost/def/"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:sosa="http://www.w3.org/ns/sosa/"
+    xmlns:spatialrelations="http://data.ordnancesurvey.co.uk/ontology/spatialrelations/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:j.0="http://purl.org/linked-data/api/vocab#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdf:Description rdf:about="http://environment.data.gov.uk/hydrology/id/stations/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2.rdf">
+    <dct:hasFormat>http://environment.data.gov.uk/hydrology/id/stations/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2.csv</dct:hasFormat>
+    <dct:publisher>Environment Agency</dct:publisher>
+    <rdfs:comment>Hydrology API for sub-daily data</rdfs:comment>
+    <j.0:licenseName>OGL 3</j.0:licenseName>
+    <dct:hasFormat>http://environment.data.gov.uk/hydrology/id/stations/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2.rdf</dct:hasFormat>
+    <dct:hasFormat>http://environment.data.gov.uk/hydrology/id/stations/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2.html</dct:hasFormat>
+    <dct:license>http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</dct:license>
+    <dct:hasFormat>http://environment.data.gov.uk/hydrology/id/stations/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2.ttl</dct:hasFormat>
+    <dct:hasFormat>http://environment.data.gov.uk/hydrology/id/stations/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2.json</dct:hasFormat>
+    <dct:hasFormat>http://environment.data.gov.uk/hydrology/id/stations/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2.geojson</dct:hasFormat>
+    <owl:versionInfo>2.1.1</owl:versionInfo>
+  </rdf:Description>
+  <rt:Measure rdf:about="http://environment.data.gov.uk/hydrology/id/measures/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2-gw-dipped-i-mAOD-qualified">
+    <core:observedProperty>
+      <skos:Concept rdf:about="http://environment.data.gov.uk/reference/def/op/groundwaterLevel">
+        <rdfs:label xml:lang="en">Groundwater level</rdfs:label>
+      </skos:Concept>
+    </core:observedProperty>
+    <rdf:type rdf:resource="http://environment.data.gov.uk/reference/def/core/TimeSeries"/>
+    <core:timeseriesID>7909bd02-cd55-4d35-bbe5-f8ae1a186f3c</core:timeseriesID>
+    <rt:valueType>instantaneous</rt:valueType>
+    <core:observationType>
+      <skos:Concept rdf:about="http://environment.data.gov.uk/reference/def/core/Qualified">
+        <rdfs:comment xml:lang="en">Indicates that the values in a series or dataset are qualified and quality checked versions of direct measurements</rdfs:comment>
+        <rdfs:label xml:lang="en">Qualified</rdfs:label>
+      </skos:Concept>
+    </core:observationType>
+    <rt:unit rdf:resource="http://qudt.org/1.1/vocab/unit#Meter"/>
+    <rt:parameterName>GroundwaterLevel</rt:parameterName>
+    <rdfs:label>Groundwater Dipped (mAOD) time series for Kemps Drift</rdfs:label>
+    <skos:notation>9610f73b-f3af-4ede-b4e7-ec615e7ab5a2-gw-dipped-i-mAOD-qualified</skos:notation>
+    <rt:unitName>mAOD</rt:unitName>
+    <rt:parameter>level</rt:parameter>
+    <core:inDataset rdf:resource="http://environment.data.gov.uk/reference/set/HydrologyDataset"/>
+    <rdf:type rdf:resource="http://environment.data.gov.uk/flood-monitoring/def/core/GroundwaterLevel"/>
+    <rt:station>
+      <rt:GroundwaterDippedOnly rdf:about="http://environment.data.gov.uk/hydrology/id/stations/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2">
+        <rt:wiskiID>SE46KMP2RD</rt:wiskiID>
+        <rt:stationGuid>9610f73b-f3af-4ede-b4e7-ec615e7ab5a2</rt:stationGuid>
+        <core:searchText>Kemps Drift SE46KMP2RD</core:searchText>
+        <rt:aquifer>RD</rt:aquifer>
+        <rdf:type rdf:resource="http://environment.data.gov.uk/flood-monitoring/def/core/Groundwater"/>
+        <spatialrelations:northing rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >465244</spatialrelations:northing>
+        <rdf:type rdf:resource="http://environment.data.gov.uk/flood-monitoring/def/core/Station"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >54.080785</geo:lat>
+        <core:observedProperty rdf:resource="http://environment.data.gov.uk/reference/def/op/groundwaterLevel"/>
+        <rt:dateOpened rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+        >1992-07-20</rt:dateOpened>
+        <spatialrelations:easting rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >448933</spatialrelations:easting>
+        <skos:notation>9610f73b-f3af-4ede-b4e7-ec615e7ab5a2</skos:notation>
+        <rt:status>
+          <skos:Concept rdf:about="http://environment.data.gov.uk/flood-monitoring/def/core/statusActive">
+            <rdfs:comment xml:lang="en">Indicates that a station is active. All is functioning as expected with the station and data is being provided on the GOV.UK service</rdfs:comment>
+            <rdfs:label xml:lang="en">Active</rdfs:label>
+            <skos:inScheme rdf:resource="http://environment.data.gov.uk/flood-monitoring/def/core/StatusScheme"/>
+          </skos:Concept>
+        </rt:status>
+        <rt:gridReference>SE4893365244</rt:gridReference>
+        <rdf:type rdf:resource="http://environment.data.gov.uk/reference/def/core/SamplingLocation"/>
+        <core:inSet rdf:resource="http://environment.data.gov.uk/reference/set/HydroMonitoringStation"/>
+        <rdfs:label>Kemps Drift</rdfs:label>
+        <rt:datum rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >12.03</rt:datum>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >-1.253548</geo:long>
+        <rt:measures rdf:resource="http://environment.data.gov.uk/hydrology/id/measures/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2-gw-dipped-i-mAOD-qualified"/>
+      </rt:GroundwaterDippedOnly>
+    </rt:station>
+    <core:valueStatistic>
+      <skos:Concept rdf:about="http://environment.data.gov.uk/reference/def/core/instantaneous">
+        <rdfs:comment xml:lang="en">Measurements which just represent the value at the instance they are taken.</rdfs:comment>
+        <rdfs:label xml:lang="en">instantaneous</rdfs:label>
+      </skos:Concept>
+    </core:valueStatistic>
+    <rt:qualifier>Groundwater Dipped</rt:qualifier>
+  </rt:Measure>
+</rdf:RDF>

@@ -1,0 +1,143 @@
+# =============================================================================
+# config/stations.yaml
+# -----------------------------------------------------------------------------
+
+stations:
+  - name: "Chilgrove House"
+    id: chilgrove_house
+    region: "South Sussex"
+    country: "UK"
+    lithology: "Unconfined chalk"
+    aquifer_description: "Chalk Group (undivided)"
+    recharge_dynamic: "Slow, diffuse matrix flow"
+    groundwater:
+      station_guid: "67c1c6de-4ad2-4636-ab5a-e0857ba15ec1"
+      wiski_id: "245221014"
+      ea_station_reference_hint: "E11190"         
+      latitude: 50.922874
+      longitude: -0.812992
+      borehole_depth_m: 43.16
+      datum_m: 77.74
+      date_opened: "1836-01-01"
+      unit: "mAOD"
+      measure: "gw-logged-i-subdaily-mAOD-qualified"
+      data_file: "data/Chilgrove/Piézométrie/Chilgrove-House-level-15min-Qualified.csv"
+      metadata_file: "data/Chilgrove/Piézométrie/Chilgrove house.txt"
+      native_resolution: "sub-daily (15 min / hourly, logged, instantaneous)"
+    rain_gauge:
+      name: "Chilgrove House rain gauge"
+      station_reference: "E11191"
+      wiski_id: "320978"
+      latitude: 50.92266
+      longitude: -0.813097
+      unit: "mm"
+      measure: "rainfall-t-86400-mm-qualified"
+      data_file: "data/Chilgrove/Rainfall/Chilgrove-House-rainfall-daily-Qualified.csv"
+      metadata_file: "data/Chilgrove/Rainfall/3a00d049-d6fa-4f73-aa3c-b521454ee422.json"
+      native_resolution: "daily total"
+
+  - name: "Kemps Drift"
+    id: kemps_drift
+    region: "North Yorkshire"
+    country: "UK"
+    lithology: "Sherwood Sandstone Group"
+    aquifer_description: "RD"
+    recharge_dynamic: "Porous intergranular flow (Triassic sandstone)"
+    groundwater:
+      station_guid: "9610f73b-f3af-4ede-b4e7-ec615e7ab5a2"
+      wiski_id: "SE46KMP2RD"
+      latitude: 54.080785
+      longitude: -1.253548
+      datum_m: 12.03
+      date_opened: "1992-07-20"
+      unit: "mAOD"
+      measure: "gw-dipped-i-mAOD-qualified"
+      data_file: "data/Kemps/Piézométrie/9610f73b-f3af-4ede-b4e7-ec615e7ab5a2-gw-dipped-i-mAOD-qualified.csv"
+      metadata_file: "data/Kemps/Piézométrie/Kemps drift.txt"
+      native_resolution: "irregular manual dip readings"
+    rain_gauge:
+      name: "Lower Dunsforth"
+      station_reference: "056505"
+      wiski_id: "056505"
+      latitude: 54.072851
+      longitude: -1.336780
+      unit: "mm"
+      measure: "rainfall-t-86400-mm-qualified"
+      data_file: "data/Kemps/Rainfall/Lower-Dunsforth-rainfall-daily-Qualified.csv"
+      metadata_file: "data/Kemps/Rainfall/Lower Dunsforth.txt"
+      native_resolution: "daily total"
+
+  - name: "Roman Road"
+    id: roman_road
+    region: "Herefordshire"
+    country: "UK"
+    lithology: "Moor Cliffs Formation"
+    aquifer_description: "Mudstone/siltstone-dominated, subordinate sandstone"
+    recharge_dynamic: "Fracture and bedding-plane flow"
+    groundwater:
+      station_guid: "1cdd6e48-7bcb-4f32-b8a8-3500a8a352b0"
+      wiski_id: "5526GW"
+      latitude: 52.078135
+      longitude: -2.776907
+      date_opened: "1973-01-25"
+      unit: "mAOD"
+      measure: "gw-logged-i-subdaily-mAOD-qualified"
+      data_file: "data/Roman road/Piézométrie/Roman-Road-level-15min-Qualified.csv"
+      metadata_file: "data/Roman road/Piézométrie/Roman Road.txt"
+      native_resolution: "sub-daily (hourly, logged, instantaneous)"
+    rain_gauge:
+      name: "Broomy Hill"
+      station_reference: "1602"
+      wiski_id: "471317"
+      latitude: 52.053059
+      longitude: -2.736469
+      unit: "mm"
+      measure: "rainfall-t-86400-mm-qualified"
+      data_file: "data/Roman road/Rainfall/Broomy-Hill-rainfall-daily-Qualified.csv"
+      metadata_file: "data/Roman road/Rainfall/Broomy hill.txt"
+      native_resolution: "daily total"
+
+  - name: "Hyde Cottages Risby"
+    id: hyde_cottages_risby
+    region: "Suffolk"
+    country: "UK"
+    lithology: "Unconfined chalk"
+    aquifer_description: "Chalk"
+    recharge_dynamic: "Slow, seasonally integrated recharge"
+    groundwater:
+      station_guid: "ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8"
+      wiski_id: "TL86_006"
+      latitude: 52.263468
+      longitude: 0.658696
+      datum_m: 65.38
+      date_opened: "1967-11-23"
+      unit: "mAOD"
+      measure: "gw-dipped-i-mAOD-qualified"
+      data_file: "data/Hyde/Piézométrie/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8-gw-dipped-i-mAOD-qualified.csv"
+      metadata_file: "data/Hyde/Piézométrie/Hyde Cottages Risby.txt"
+      native_resolution: "irregular manual dip readings"
+    rain_gauge:
+      name: "Mildenhall"
+      station_reference: "E24591"
+      wiski_id: "186712"
+      latitude: 52.345447
+      longitude: 0.48429
+      unit: "mm"
+      measure: "rainfall-t-86400-mm-qualified"
+      data_file: "data/Hyde/Rainfall/Mildenhall-rainfall-daily-Qualified.csv"
+      metadata_file: "data/Hyde/Rainfall/9b495091-97a1-42b4-9b04-f4eff295cd5d.json"
+      native_resolution: "daily total"
+
+regional_precipitation:
+  name: "HadEWP"
+  description: "Daily England & Wales precipitation series (Alexander & Jones, 2001)"
+  data_file: "data/HadEWP_daily_totals/HadEWP_daily_totals.txt"
+  unit: "mm"
+
+pet_climatology:
+  data_file: "data/station_pet_averages.csv"
+  station_overrides:
+    chilgrove_house: null
+    kemps_drift: null
+    roman_road: null
+    hyde_cottages_risby: null

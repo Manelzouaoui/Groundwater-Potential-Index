@@ -1,0 +1,85 @@
+PREFIX op: <http://environment.data.gov.uk/reference/def/op/>
+PREFIX rt: <http://environment.data.gov.uk/flood-monitoring/def/core/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX spatialrelations: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/>
+PREFIX local: <http://localhost/def/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX core: <http://environment.data.gov.uk/reference/def/core/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX wfd: <http://environment.data.gov.uk/catchment-planning/def/water-framework-directive/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+op:groundwaterLevel  rdf:type  skos:Concept;
+        rdfs:label  "Groundwater level"@en .
+
+core:Qualified  rdf:type  skos:Concept;
+        rdfs:comment  "Indicates that the values in a series or dataset are qualified and quality checked versions of direct measurements"@en;
+        rdfs:label    "Qualified"@en .
+
+core:instantaneous  rdf:type  skos:Concept;
+        rdfs:comment  "Measurements which just represent the value at the instance they are taken."@en;
+        rdfs:label    "instantaneous"@en .
+
+<http://environment.data.gov.uk/hydrology/id/stations/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8.ttl>
+        dct:hasFormat    "http://environment.data.gov.uk/hydrology/id/stations/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8.rdf";
+        dct:hasFormat    "http://environment.data.gov.uk/hydrology/id/stations/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8.geojson";
+        owl:versionInfo  "2.1.1";
+        dct:hasFormat    "http://environment.data.gov.uk/hydrology/id/stations/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8.html";
+        dct:publisher    "Environment Agency";
+        rdfs:comment     "Hydrology API for sub-daily data";
+        dct:license      "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/";
+        dct:hasFormat    "http://environment.data.gov.uk/hydrology/id/stations/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8.ttl";
+        <http://purl.org/linked-data/api/vocab#licenseName>  "OGL 3";
+        dct:hasFormat    "http://environment.data.gov.uk/hydrology/id/stations/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8.json";
+        dct:hasFormat    "http://environment.data.gov.uk/hydrology/id/stations/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8.csv" .
+
+rt:statusActive  rdf:type  skos:Concept;
+        rdfs:comment   "Indicates that a station is active. All is functioning as expected with the station and data is being provided on the GOV.UK service"@en;
+        rdfs:label     "Active"@en;
+        skos:inScheme  rt:StatusScheme .
+
+<http://environment.data.gov.uk/hydrology/id/stations/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8>
+        core:inSet                 <http://environment.data.gov.uk/reference/set/HydroMonitoringStation>;
+        rdf:type                   core:SamplingLocation;
+        geo:long                   0.658696;
+        rt:wiskiID                 "TL86_006";
+        rdf:type                   rt:GroundwaterDippedOnly;
+        rt:dateOpened              "1967-11-23"^^xsd:date;
+        skos:notation              "ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8";
+        rt:status                  rt:statusActive;
+        rt:measures                <http://environment.data.gov.uk/hydrology/id/measures/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8-gw-dipped-i-mAOD-qualified>;
+        rt:gridReference           "TL8153366142";
+        rdf:type                   rt:Groundwater;
+        geo:lat                    52.263468;
+        spatialrelations:northing  266142;
+        spatialrelations:easting   581533;
+        rt:stationGuid             "ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8";
+        rdfs:label                 "Hyde Cottages Risby";
+        rdf:type                   rt:Station;
+        rt:datum                   65.38;
+        core:observedProperty      op:groundwaterLevel;
+        core:searchText            "Hyde Cottages Risby TL86_006" .
+
+<http://environment.data.gov.uk/hydrology/id/measures/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8-gw-dipped-i-mAOD-qualified>
+        core:valueStatistic    core:instantaneous;
+        rt:unitName            "mAOD";
+        core:inDataset         <http://environment.data.gov.uk/reference/set/HydrologyDataset>;
+        core:timeseriesID      "87072739-1f6f-479b-a23a-b76887d520d9";
+        rt:qualifier           "Groundwater Dipped";
+        rdf:type               core:TimeSeries;
+        rt:valueType           "instantaneous";
+        skos:notation          "ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8-gw-dipped-i-mAOD-qualified";
+        rt:unit                <http://qudt.org/1.1/vocab/unit#Meter>;
+        rt:station             <http://environment.data.gov.uk/hydrology/id/stations/ea15dfcd-00b7-41d9-91b6-c4fc325d9cb8>;
+        rt:parameterName       "GroundwaterLevel";
+        rt:parameter           "level";
+        rdf:type               rt:GroundwaterLevel;
+        rdfs:label             "Groundwater Dipped (mAOD) time series for Hyde Cottages Risby";
+        core:observedProperty  op:groundwaterLevel;
+        core:observationType   core:Qualified;
+        rdf:type               rt:Measure .

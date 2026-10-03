@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+type: software
+title: "groundwater-potential-index: reference implementation of the Groundwater Potential Index (GPI)"
+authors:
+  - given-names: Dorsaf
+    family-names: Sebai
+  - given-names: Manel
+    family-names: Zouaoui
+repository-code: "https://github.com/Manelzouaoui/groundwater-potential-index"
+preferred-citation:
+  type: article
+  title: >-
+    The Groundwater Potential Index: A Physics-Informed Meteorology-Driven
+    Proxy for Aquifer Recharge Dynamics
+

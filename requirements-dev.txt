@@ -1,0 +1,4 @@
+# Additional dependencies used only for running the test suite
+# (tests/), not required to reproduce the calibration or the figures.
+-r requirements.txt
+pytest>=8.0

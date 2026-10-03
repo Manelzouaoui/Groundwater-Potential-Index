@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Generated outputs (reproducible by scripts/, see results/README.md and
+# figures/README.md; not stored in version control so that the pipeline's
+# actual outputs, rather than a possibly stale copy, are what a user sees
+# after running the scripts).
+results/*.csv
+figures/*.png
+figures/*.pdf
+!results/README.md
+!figures/README.md
+
+# data/ is intentionally NOT ignored: the repository ships the real raw
+# environmental data files it was written against (see data/README.md).
