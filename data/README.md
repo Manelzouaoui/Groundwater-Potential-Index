@@ -157,7 +157,7 @@ The four groundwater records do not cover the same observation period:
 | ------------------- | ----------------------- | ---------------------- | 
 | Chilgrove House     | 2024-01-01              | 2026-04-10             |                
 | Hyde Cottages Risby | 2024-01-01              | 2026-04-10             |              
-| Kemps Drift         | 2024-01-01              | 2025-05-29             |             
+| Kemps Drift         | 2023-01-01              | 2025-05-29             |             
 | Roman Road          | 2024-01-01              | 2026-04-10             |     
 
 ## File formats
