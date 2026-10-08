@@ -27,7 +27,7 @@ STUDY_PERIODS = {
     "hyde_cottages_risby": (pd.Timestamp("2024-01-01"), pd.Timestamp("2026-04-10")),
 }
 KEMPS_DRIFT_ID = "kemps_drift"
-KEMPS_START = pd.Timestamp("2024-01-01")
+KEMPS_START = pd.Timestamp("2023-01-01")
 
 
 def main() -> None:
